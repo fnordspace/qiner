@@ -566,7 +566,6 @@ int main(int argc, char *argv[]) {
     printf("Send solution to %s:%d\n", nodeIp, nodePort);
 
     std::array<unsigned char, 32> sendNonce;
-    consoleCtrlHandler();
 
     getPublicKeyFromIdentity(miningID, computorPublicKey);
 

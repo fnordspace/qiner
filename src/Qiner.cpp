@@ -584,7 +584,8 @@ int main(int argc, char *argv[]) {
 
     // getIdentityFromPublicKey(signingPublicKey, miningID, false);
 
-    hexToByte(argv[6], randomSeed, 32);
+    hexToByte(argv[5], randomSeed, 32);
+    hexToByte(argv[6], sendNonce.data(), 32);
     ServerSocket serverSocket;
 
     if (serverSocket.establishConnection(nodeIp)) {
